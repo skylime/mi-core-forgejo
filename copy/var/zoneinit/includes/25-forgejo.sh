@@ -41,6 +41,10 @@ if [ ! -f "${FORGEJO_INI}" ]; then
 		ENABLED = true
 		PROTOCOL = sendmail
 		FROM = git@${HOSTNAME}
+
+		[other]
+		SHOW_FOOTER_VERSION = false
+		SHOW_FOOTER_TEMPLATE_LOAD_TIME = false
 	EOF
 fi
 
@@ -48,7 +52,9 @@ fi
 mkdir -p ${FORGEJO_HOME}/.ssh
 echo 'PATH=/usr/local/sbin:/usr/local/bin:/opt/local/sbin:/opt/local/bin:/usr/sbin:/usr/bin:/sbin' \
 	>${FORGEJO_HOME}/.ssh/environment
-gsed -i -e 's:.*PermitUserEnvironment.*no:PermitUserEnvironment yes:g' \
+gsed -i \
+	-e 's:.*PermitUserEnvironment.*no:PermitUserEnvironment yes:g' \
+	-e 's:^Port .*:Port 22:g' \
 	/etc/ssh/sshd_config
 
 # Fix all required permissions
