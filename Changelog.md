@@ -1,5 +1,24 @@
 # Changelog
 
+## 23.4.0
+
+### New
+
+* Initial commit to replace gogs with forgejo (#1) [Thomas Merkel]
+
+  It's not possible to migrate from an existing gogs zone to forgejo. You
+  need to handle the migration by yourself. Forgejo is a fork of Gitea
+  which is a fork of Gogs long time ago.
+
+  * Using pkgsrc package for forgejo
+  * Use new file and data structure provided by the package
+  * Provide initial configuration file for forgejo
+  * Fixing nginx proxy configuration
+
+### Fix
+
+* Restructure ssl configuration for nginx. [Thomas Merkel]
+
 ## 20.3.0
 
 ### New
