@@ -1,11 +1,11 @@
 {
 	"name":         "core-forgejo",
-	"version":      "23.4.0",
+	"version":      "25.4.0",
 	"description":  "core.io Forgejo - Small Git Service",
 	"organization": "SkyLime",
 	"brand":        "Instance",
 	"homepage":     "https://github.com/skylime/mi-core-forgejo",
-	"base":         "97cc75ec-ba4d-45cd-8966-e53baa0f2d5e",
+	"base":         "e144c16f-4b80-4c11-ac1b-87c816c9f3f2",
 	"minram":       512,
 	"customer_metadata": {
 		"root_authorized_keys": {"type": "text", "description": "SSH public authorized key(s) for the root user"},
