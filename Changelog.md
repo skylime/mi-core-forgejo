@@ -1,5 +1,15 @@
 # Changelog
 
+## 25.3.0
+
+### New
+
+* Feat: update to 25q4 with forgejo version 13.0.3. [Thomas Merkel]
+
+### Fix
+
+* Nginx ssl configuration remove obsolete parameter. [Thomas Merkel]
+
 ## 23.4.0
 
 ### New
