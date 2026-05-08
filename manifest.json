@@ -1,6 +1,6 @@
 {
 	"name":         "core-forgejo",
-	"version":      "25.4.0",
+	"version":      "25.4.1",
 	"description":  "core.io Forgejo - Small Git Service",
 	"organization": "SkyLime",
 	"brand":        "Instance",
