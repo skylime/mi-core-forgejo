@@ -63,5 +63,8 @@ chown -R git:git \
 	${FORGEJO_INI} \
 	/var/log/forgejo
 
+# Set default shell to bash for git user
+usermod -s /usr/bin/bash git
+
 # Enable gogs service
 svcadm enable svc:/pkgsrc/forgejo:default
