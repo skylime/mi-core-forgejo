@@ -1,5 +1,12 @@
 # Changelog
 
+## 25.4.1
+
+### Bug Fixes
+
+- Force bash as default shell for git [Thomas Merkel]
+- Enable sshd by default for forgejo [Thomas Merkel]
+
 ## 25.3.0
 
 ### New
