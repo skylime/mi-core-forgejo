@@ -1,5 +1,15 @@
 # Changelog
 
+## 25.4.2
+
+### Bug Fixes
+
+- Enable sshd by default for forgejo service [Thomas Merkel]
+
+### Features
+
+- Switch to forgejo 17.0.1 [Thomas Merkel]
+
 ## 25.4.1
 
 ### Bug Fixes
